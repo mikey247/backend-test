@@ -21,7 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', ProfileList.as_view(), name="simple"),
     path('create/', ProfileCreate.as_view(), name="create"),
-
     path('retrieve/<pk>/', ProfileDetail.as_view(), name="details"),
     path('delete/<pk>/', ProfileDelete.as_view(), name="delete")
 ]
