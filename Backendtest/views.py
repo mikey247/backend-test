@@ -1,4 +1,5 @@
-from pyexpat import model
+# from pyexpat import model
+# from traceback import clear_frames
 from django.shortcuts import render
 from Backendtest.models import Profile
 from Backendtest.serializers import ProfileSerializer
@@ -26,3 +27,7 @@ class ProfileDelete(generics.DestroyAPIView):
 class ProfileDetail(generics.RetrieveAPIView):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
+
+class ProfileUpdate(generics.UpdateAPIView):
+      queryset = Profile.objects.all()
+      serializer_class = ProfileSerializer
