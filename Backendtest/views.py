@@ -1,5 +1,4 @@
-# from pyexpat import model
-# from traceback import clear_frames
+
 from django.shortcuts import render
 from Backendtest.models import Profile
 from Backendtest.serializers import ProfileSerializer
