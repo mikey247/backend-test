@@ -138,6 +138,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
     "http://127.0.0.1:9000",
-    'http://localhost:3000'
-    'https://mike-s-react-test.netlify.app'
+    'http://localhost:3000',
+    'https://mike-s-react-test.netlify.app',
 ]
